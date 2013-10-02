@@ -21,7 +21,7 @@ program
 program
     .command('ls')
     .description('list the installed all Nodes').action(function() {
-        require('../lib/ls').ls();
+        require('../lib/ls').local();
     });
 program
     .command('ls-remote')
