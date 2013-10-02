@@ -20,7 +20,9 @@ program
     .description('use the specified Node in current shell');
 program
     .command('ls')
-    .description('list the installed all Nodes');
+    .description('list the installed all Nodes').action(function() {
+        require('../lib/ls').ls();
+    });
 program
     .command('ls-remote')
     .description('list remote versions available for install')
