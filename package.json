@@ -6,7 +6,8 @@
   "dependencies": {
     "underscore": "1.4.x",
     "commander": "*",
-    "request": "*"
+    "request": "*",
+    "colors": "*"
   },
   "devDependencies": {
     "mocha": "*",
