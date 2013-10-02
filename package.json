@@ -20,7 +20,7 @@
     "widnows"
   ],
   "bin": {
-    "nvmw": "./bin/nvmw"
+    "nvmw": "./bin/nvmw.js"
   },
   "repository": "git://github.com/NanJingBoy/nvmw"
 }
