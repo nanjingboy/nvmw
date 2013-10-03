@@ -9,10 +9,6 @@
     "request": "*",
     "colors": "*"
   },
-  "devDependencies": {
-    "mocha": "*",
-    "should": "*"
-  },
   "keys": [
     "Node",
     "version",
@@ -20,7 +16,7 @@
     "widnows"
   ],
   "bin": {
-    "nvmw": "./bin/nvmw.js"
+    "nvmw": "./bin/nvmw.bat"
   },
   "repository": "git://github.com/NanJingBoy/nvmw"
 }
