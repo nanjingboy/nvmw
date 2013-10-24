@@ -10,7 +10,8 @@
     "colors": "*",
     "adm-zip": "*",
     "rmdir": "*",
-    "mkdirp": "*"
+    "mkdirp": "*",
+    "async": "*"
   },
   "keys": [
     "Node",
