@@ -8,7 +8,9 @@
     "commander": "*",
     "request": "*",
     "colors": "*",
-    "adm-zip": "*"
+    "adm-zip": "*",
+    "rmdir": "*",
+    "mkdirp": "*"
   },
   "keys": [
     "Node",
