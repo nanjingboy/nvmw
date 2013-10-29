@@ -17,10 +17,10 @@ Usage: nvmw [options] [command]
 
 Commands:
 
-  install <version>      build and install the given version of Node
+  install <version>      install the given version of Node
   uninstall <version>    uninstall the given version of Node
-  use <version>          use the specified Node in current shell
-  deactivate             undo effects of nvmw on current shell
+  use <version>          use the given version of Node in current shell
+  deactivate             undo effects of nvmw
   ls                     list the installed all Nodes
   ls-remote              list remote versions available for install
   cleanup                remove stale local caches
