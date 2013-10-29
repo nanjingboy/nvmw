@@ -1,15 +1,19 @@
 @echo off
 
-node "%~dp0\..\lib\cli.js" %1 %2
+if exist "%~dp0\node.exe" (
+  "%~dp0\node.exe" "%~dp0\..\lib\cli.js" %1 %2
+) else (
+  node "%~dp0\..\lib\cli.js" %1 %2
+)
 
 if "%1" == "use" (
-  call :set_env %1
+  call :set_enviroment %1
 ) else if "%1" == "deactivate" (
-  call :set_env %1
+  call :set_enviroment %1
 )
 exit /b %ERRORLEVEL%
 
-:set_env
+:set_enviroment
   if %ERRORLEVEL% == 0 (
       if "%1" == "deactivate" (
         set "NVMW="
