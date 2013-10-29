@@ -11,7 +11,8 @@
     "adm-zip": "*",
     "rmdir": "*",
     "mkdirp": "*",
-    "async": "*"
+    "async": "*",
+    "winreg": "*"
   },
   "keys": [
     "Node",
