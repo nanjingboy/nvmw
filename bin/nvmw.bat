@@ -10,6 +10,8 @@ if  exist "%node_path%" (
     call :set_enviroment %1
   ) else if "%1" == "deactivate" (
     call :set_enviroment %1
+  ) else if "%1" == "switch" (
+    call :set_enviroment %1
   )
   exit /b %ERRORLEVEL%
 )
