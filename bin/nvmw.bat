@@ -1,17 +1,19 @@
 @echo off
 
-if exist "%~dp0\node.exe" (
-  "%~dp0\node.exe" "%~dp0\..\lib\cli.js" %1 %2
-) else (
-  node "%~dp0\..\lib\cli.js" %1 %2
-)
+for /f "tokens=2*" %%a in ('reg query HKEY_CURRENT_USER\Software\Node.js /v InstallPath') do set "node_path=%%b\node.exe"
 
-if "%1" == "use" (
-  call :set_enviroment %1
-) else if "%1" == "deactivate" (
-  call :set_enviroment %1
+if  exist "%node_path%" (
+  "%node_path%" "%~dp0\..\lib\cli.js" %1 %2
+  if "%1" == "use" (
+    call :set_enviroment %1
+  ) else if "%1" == "deactivate" (
+    call :set_enviroment %1
+  )
+  exit /b %ERRORLEVEL%
+) else (
+  echo The system version of Node not found
+  exit /b 1
 )
-exit /b %ERRORLEVEL%
 
 :set_enviroment
   if %ERRORLEVEL% == 0 (
