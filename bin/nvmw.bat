@@ -12,6 +12,8 @@ if  exist "%node_path%" (
     call :set_enviroment %1
   ) else if "%1" == "switch" (
     call :set_enviroment %1
+  ) else if "%1" == "switch-deactivate" (
+    call :set_enviroment %1
   )
   exit /b %ERRORLEVEL%
 )
@@ -19,11 +21,10 @@ exit /b 1
 
 :set_enviroment
   if %ERRORLEVEL% == 0 (
-      if "%1" == "deactivate" (
-        set "NVMW="
+      if "%1" == "switch" (
+        "%HOMEDRIVE%\%HOMEPATH%\cmd_auto_run.bat"
       ) else (
-        for /f "tokens=* delims=" %%i in (%TMP%\NVMW) do set "NVMW=%%i"
+        "%TMP%\nvmw_env.bat"
       )
-      for /f "tokens=* delims=" %%i in (%TMP%\PATH) do set "PATH=%%i"
   )
 exit /b 0
