@@ -44,7 +44,7 @@ nvmw -h
 >- You should install a system version Node with Windows installer 
 
 ## Release History
-_2013-10-25   v0.1.1   Add switch and switch-deactivate commands_
+_2013-10-30   v0.1.1   Add switch and switch-deactivate commands_
 
 _2013-10-05   v0.1.0   Release the first version_
 
