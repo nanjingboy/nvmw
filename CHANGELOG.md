@@ -1,3 +1,6 @@
+## 0.1.5 November 09, 2014
+* Fix error variable reference
+
 ## 0.1.3 November 08, 2014
 * Fix npm install error which npm version is greater then 1.4.12
 
