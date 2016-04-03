@@ -43,6 +43,7 @@ nvmw -h
 * It doesn't work in Windows Powershell
 * The latest version for npm is 1.4.12
 * You should install a system version Node with Windows installer
+* Node versions will be installed on the path X:\Users\<yourUserName>\AppData\Roaming\nvm\
 
 ## License
 [MIT](http://www.opensource.org/licenses/MIT)
