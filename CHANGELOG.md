@@ -1,3 +1,7 @@
+## 0.2.1 November 08, 2016
+* Replace windows x64 download path with win-x64
+* Add `NVM_NODEJS_ORG_MIRROR` env support
+
 ## 0.1.5 November 09, 2014
 * Fix error variable reference
 
