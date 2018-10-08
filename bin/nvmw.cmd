@@ -25,9 +25,9 @@ EXIT /b %ERRORLEVEL%
 :set_enviroment
   IF %ERRORLEVEL% == 0 (
       IF "%1" == "switch" (
-        "%HOMEDRIVE%\%HOMEPATH%\cmd_auto_run.bat"
+        "%HOMEDRIVE%\%HOMEPATH%\cmd_auto_run.cmd"
       ) ELSE (
-        "%TMP%\nvmw_env.bat"
+        "%TMP%\nvmw_env.cmd"
       )
   )
 EXIT /b 0
