@@ -4,14 +4,14 @@
   "version": "0.2.1",
   "author": "Tom.Huang <hzlhu.dargon@gmail.com>",
   "dependencies": {
-    "underscore": "1.4.x",
-    "commander": "*",
-    "request": "*",
-    "colors": "*",
-    "adm-zip": "*",
-    "rmdir": "*",
-    "mkdirp": "*",
     "async": "*",
+    "colors": "*",
+    "commander": "*",
+    "extract-zip": "^1.6.7",
+    "mkdirp": "*",
+    "request": "*",
+    "rmdir": "*",
+    "underscore": "1.4.x",
     "winreg": "*"
   },
   "keys": [
