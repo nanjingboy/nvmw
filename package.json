@@ -21,7 +21,7 @@
     "widnows"
   ],
   "bin": {
-    "nvmw": "./bin/nvmw.bat"
+    "nvmw": "./bin/nvmw.cmd"
   },
   "repository": "git://github.com/nanjingboy/nvmw"
 }
