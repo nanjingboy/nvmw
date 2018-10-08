@@ -1,3 +1,8 @@
+## 1.0.0 October 08, 2018
+
+* Upgrade the install logic
+* Fix the uninstall error
+
 ## 0.2.1 November 08, 2016
 * Replace windows x64 download path with win-x64
 * Add `NVM_NODEJS_ORG_MIRROR` env support

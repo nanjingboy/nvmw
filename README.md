@@ -1,7 +1,9 @@
-NVMW
+nvmw
 ====
 
 This is a simple Node Version Manager for Windows
+
+[![npm](https://img.shields.io/npm/v/nvmw.svg?style=plastic)](https://npmjs.org/package/nvmw) [![npm](https://img.shields.io/npm/dm/nvmw.svg?style=plastic)](https://npmjs.org/package/nvmw) [![npm](https://img.shields.io/npm/dt/nvmw.svg?style=plastic)](https://npmjs.org/package/nvmw)
 
 ## Installation
 
@@ -34,16 +36,16 @@ nvmw -h
 
   Examples:
 
-    nvmw install v0.10.20
-    nvmw uninstall v0.10.20
-    nvmw use v0.10.20
+    nvmw install v8.12.0
+    nvmw uninstall v8.12.0
+    nvmw use v8.12.0
 ```
 
 ## Notes
-* It doesn't work in Windows Powershell
-* The latest version for npm is 1.4.12
-* You should install a system version Node with Windows installer
-* Node versions will be installed on the path X:\Users\<yourUserName>\AppData\Roaming\nvm\
+
+* It only works in Windows CMD.
+* This tool can't install the Node which version below v4.5.0.
+* You should install a system version Node with [Windows installer](https://nodejs.org/en/download/).
 
 ## License
 [MIT](http://www.opensource.org/licenses/MIT)
